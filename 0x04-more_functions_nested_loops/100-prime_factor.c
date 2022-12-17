@@ -13,7 +13,7 @@ long int max;
 long int i;
 
 n = 612852475143;
-imax = -1;
+max = -1;
 
 while (n % 2 == 0)
 {
@@ -33,7 +33,7 @@ n = n / i;
 if (n > 2)
 max = n;
 
-printf("%ld\n", max)
+printf("%ld\n", max);
 
 return (0);
 }
