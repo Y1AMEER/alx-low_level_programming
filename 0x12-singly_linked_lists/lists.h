@@ -7,10 +7,10 @@
  * @len: lenght of the string
  * @next: ponts to the next code
  *
- * @Description: singly linked list node structure
+ * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct lists_s 
+typedef struct lists_s
 {
 	char *str;
 	unsigned int len;
