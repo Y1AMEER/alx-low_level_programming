@@ -25,6 +25,7 @@ char *create_buffer(char *file)
 	}
 
 	return (buffer);
+
 }
 
 /**
@@ -68,8 +69,8 @@ int main(int argc, char *argv[])
 	}
 
 	buffer = create_buffer(argv[2]);
-	ed(from, buffer, 1024);
-	rom = open(argv[1], O_RDONLY)
+	from = open(argv[1], O_RDONLY);
+	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
@@ -92,6 +93,7 @@ int main(int argc, char *argv[])
 
 		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
+
 	} while (r > 0);
 
 	free(buffer);
